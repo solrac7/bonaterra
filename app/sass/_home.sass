@@ -1,0 +1,486 @@
+body
+	overflow-x: hidden
+	padding-top: 77px
+	font-family: 'Roboto Condensed', sans-serif
+	-webkit-font-smoothing: antialiased
+	height: auto !important
+
+.no__scroll
+	overflow: hidden
+
+
+.parallax img
+	z-index: -1
+	bottom: -83px
+
+
+
+
+
+///////// HERO /////////
+
+.hero
+	position: relative
+
+.hero-slide__title
+	color: white !important
+	font-size: 45px
+	margin: 0
+	text-shadow: 2px 2px 2px rgba(0,0,0,.2)
+
+
+@media(min-width: 768px)
+	.hero-slide__title
+		font-size: 140px
+
+
+.hero-slide__txt-container
+	background: red
+	padding: 5px 15px
+	display: inline-block
+	position: relative
+	top: 0
+
+@media(min-width: 768px)
+	.hero-slide__txt-container
+		top: -40px
+
+
+
+
+.hero-slide__txt
+	color: white !important
+	margin: 0
+	font-size: 18px
+
+@media(min-width: 768px)
+	.hero-slide__txt
+		color: white !important
+		font-size: 25px
+
+
+
+.slide__title
+	color: white !important
+	font-size: 45px
+	margin: 0
+	text-shadow: 2px 2px 2px rgba(0,0,0,.2)
+	position: relative
+	z-index: 999
+
+@media(min-width: 768px)
+	.slide__title
+		font-size: 80px
+
+
+
+
+.hero
+	height: 400px !important
+	.indicators
+		bottom: 20px
+		z-index: 3
+
+	.slides
+		li
+			.caption
+				top: 50%
+				margin-top: -66px
+
+@media(min-width: 768px)
+	.hero
+		height: 600px !important
+		.slides
+			height: 600px !important
+			li
+				.caption
+					top: 50%
+					margin-top: -122px
+
+
+
+///////// PRODUCTS MOBILE /////////
+
+.acordeon
+	padding-top: 20px
+
+@media(min-width: 992px)
+	.acordeon
+		display: none
+
+.products
+	margin-left: -15px
+	margin-right: -15px
+
+	.collapsible-header
+		padding: 10px 15px
+		text-transform: uppercase
+		font-size: 16px
+		color: white
+		border-bottom: 1px solid white
+
+	.collapsible-body
+		a
+			padding: 10px 15px
+			display: block
+			border-bottom: 1px solid #CCC
+			font-size: 16px
+			color: #777
+			&:hover
+				text-decoration: none
+
+.apple
+	background: #b8163b
+
+.peach
+	background: #e7bc18
+
+.nectarine
+	background: #e48f4a
+
+.cherry
+	background: #8c0862
+
+.pearl
+	background: #f3db2b
+
+.wallnut
+	background: #e4d0b3
+
+.unshelled
+	background: #e4d0b3
+
+.plum
+	background: #87343e
+
+
+
+/////// HARVEST TIME ///////
+	
+.harvest-time
+	padding: 20px 15px
+	text-align: center
+	img
+		max-width: 100%
+
+@media(min-width: 992px)
+	.harvest-time
+		padding: 20px 0
+
+.harvest-time__title
+	color: #DDD
+	font-size: 35px
+	margin: 0 0 20px 0
+
+@media(min-width: 768px)
+	.harvest-time__title
+		font-size: 70px
+
+.harvest-time__title-products
+	display: none
+
+@media(min-width: 992px)
+	.harvest-time__title-products
+		display: inline-block
+
+
+
+.harvest-time__container
+	width: 100%
+
+@media(min-width: 992px)
+	.harvest-time__container
+		width: 960px
+		margin: 0 auto
+
+.harvest-time__btn-container
+	padding-top: 34px
+	display: none
+	width: 100px
+	float: left;
+	margin-left: 10px
+
+@media(min-width: 992px)
+	.harvest-time__btn-container
+		display: block
+
+
+.harvest-time__btn
+	color: white
+	padding: 0 9px
+	background: #8cb711
+	font-size: 10px
+	+transition(all .3s ease)
+	float: right
+	display: block
+	margin-bottom: 4.2px
+	&:hover
+		background: red
+		text-decoration: none
+		color: white
+
+.mb
+	margin-bottom: 14px
+
+
+/////// FOOTER ///////
+footer
+	text-align: center
+	position: relative
+	padding: 20px 0
+
+.footer__title
+	color: #DDD
+	font-size: 35px
+	margin: 0 0 20px 0 
+
+@media(min-width: 768px)
+	.footer__title
+		font-size: 70px
+
+
+
+
+.footer-nuez
+	position: absolute
+	top: 160px
+	display: none	
+
+.footer-damasco
+	position: absolute
+	top: 30px
+	display: none
+
+@media(min-width: 992px)
+	.footer-nuez
+		display: block
+		left: -100px
+
+	.footer-damasco
+		display: block
+		right: -270px
+
+@media(min-width: 1200px)
+	.footer-nuez
+		left: -60px
+
+	.footer-damasco
+		right: -120px
+
+
+
+
+
+.footer__subtitle
+	color: #575757
+	font-size: 16px
+
+.footer__txt
+	color: #999
+	font-size: 16px
+
+@media(min-width: 992px)
+	.footer__subtitle, .footer__txt, .footer__numbers, .footer__email
+		text-align: left
+
+
+.footer__img
+	max-width: 100%
+	margin-bottom: 10px
+
+@media(min-width: 992px)
+	.footer__img
+		margin-bottom: 50px
+
+.footer__numbers
+	color: #a3bc6a
+	font-size: 16px
+
+.footer__email
+	display: block
+	color: #a3bc6a
+	font-size: 16px
+	&:hover
+		color: #7ca206
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider.slider-dos
+	height: 500px !important
+	.slides
+		height: 500px !important
+		li
+			.caption
+				top: 50%
+				margin-top: -130px
+
+
+.slider.slider-tres
+	height: 500px !important
+	.slides
+		height: 500px !important
+		li
+			.caption
+				top: 50%
+				margin-top: -222.5px
+
+	.indicators
+		bottom: 20px
+		z-index: 3
+
+
+@media(min-width: 768px)
+	.slider.slider-tres
+		.slides
+			li
+				.caption
+					margin-top: -142.5px
+
+
+
+
+
+.slide__container-txt
+	background: red
+	padding: 5px 15px
+	display: block
+	position: relative
+	top: 0
+
+.slide__txt
+	color: white !important
+	margin: 0
+	font-size: 16px
+	margin-bottom: 15px
+
+.slide__btn
+	background: #84bb38
+	color: white
+	text-align: center
+	padding: 10px
+	font-size: 15px
+	position: relative
+	top: 8px
+	+transition(all .3s ease)
+	&:hover
+		color: white
+		text-decoration: none
+		background: #68952b
+
+@media(min-width: 768px)
+	.slide__btn
+		top: -21px
+
+
+
+
+@media(min-width: 768px)
+	.slider-dos .slide__container-txt
+		top: -30px
+		padding: 30px 15px
+		width: 555px
+
+	.slide__container-txt
+		top: -30px
+		padding: 30px 15px
+
+	.slide__txt
+		color: white !important
+		font-size: 18px
+
+
+
+
+.slide__arrow-container
+	display: none
+	width: 60px
+	height: 60px
+	background: rgba(0,0,0,.7)
+	position: absolute
+	top: 50%
+	margin-top: -30px
+	z-index: 3
+	cursor: pointer
+	+transition(all .3s ease)
+
+	&:hover
+		background: red
+
+	&.left
+		left: 0
+
+	&.right
+		right: 0
+	
+	img
+		width: 17px
+		position: relative
+		top: 14px
+
+	.slide__arrow-left
+		left: 17px
+
+	.slide__arrow-right
+		float: right
+		right: 20px
+
+@media(min-width: 768px)
+	.slide__arrow-container
+		display: block
+
+
+
+.family	
+	margin-top: -40px;
+
+.owned
+	padding-top: 80px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

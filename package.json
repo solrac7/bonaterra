@@ -1,0 +1,23 @@
+{
+  "name": "Bonaterra",
+  "version": "0.0.1",
+  "description": "Sitio web Bonaterra responsive",
+  "license": "MIT",
+  "autor": "Carlos Rojas Sepúlveda <holasolrac@gmail.com> - http://solrac7.github.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solrac7/bonaterra.git"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "connect-history-api-fallback": "^1.3.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "wiredep": "^4.0.0"
+  }
+}

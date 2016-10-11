@@ -1,0 +1,206 @@
+/*********** HEADER ***********/
+
+header
+  height: 77px
+  position: fixed
+  width: 100%
+  left: 0
+  top: 0
+  z-index: 9999
+  +transition(all 0.3s ease)
+  background: white
+  box-shadow: 2px 0 21px rgba(0,0,0,.2)
+
+.dn
+  top: -70px
+  left: 0
+  +transition(all 0.3s ease)
+
+
+.header__menu
+  background: rgba(56, 10, 20, 0.97)
+  left: 0
+  height: 100vh
+  margin: 0
+  padding: 0
+  position: fixed
+  width: 100vw
+  z-index: 999
+  display: none
+  
+  ul
+      list-style: none
+      margin: 0
+      padding: 0
+      position: relative
+      top: 50%
+      margin-top: -137px
+      +transition(all .3s ease)
+
+      li 
+        margin-bottom: 20px
+        padding: 0
+        text-align: center
+
+        a
+          +transition(all .3s ease)
+          color: #CFD8DC
+          font-size: 1.5em
+          font-weight: 300
+          text-decoration: none
+          letter-spacing: 1px
+
+@media(min-width: 992px)
+  .col-xs-9
+    .header__menu
+      height: auto 
+      position: relative 
+      width: auto 
+      display: block 
+      top: 95px
+      float: right
+
+      ul
+        position: relative
+        margin-top: -66px
+
+        li 
+          display: inline
+          text-align: left
+
+          a
+            color: #666
+            text-transform: uppercase
+            font-size: 1em 
+            font-weight: 500 
+            margin-left: 20px
+            &:hover
+              color: #b8163b
+
+
+    
+
+
+      
+
+
+/*------- MENU ACTIVE ------- */
+
+#about
+  .about
+    a
+      color: white
+      text-decoration: line-through
+#work
+  .workcito
+    a
+      color: white
+      text-decoration: underline
+
+#contact
+  .contact
+    a
+      color: white
+      text-decoration: line-through
+
+
+/****** BONATERRA LOGO ******/
+
+.logo__container
+  -webkit-perspective: 50px
+  -moz-perspective: 50px
+  perspective: 50px
+  width: 50px
+  top: -50px
+  left: 0
+  opacity: 0
+  position: relative
+  display: block
+  +transition(all .3s ease)
+  &:hover
+    +transform(scale(0.95)) 
+    #logoSolrac
+      opacity: .3
+
+
+
+/****** HAMBURGER MENU ******/
+.menu, .close
+  width: 22px
+  height: 22px
+  cursor: pointer
+  float: right
+  top: 30px
+  position: relative
+  z-index: 99999
+  +transition(all 0.3s ease)
+
+@media(min-width: 992px)
+  .menu, .close
+    display: none
+
+
+
+
+.menu, .close 
+  span
+    width: 100%
+    height: 3px
+    background: #85bb3a
+    display: block
+    position: relative
+    top: 7px
+    +transition(all .3s ease)
+    +border-radius(5px)
+    
+
+.menu, .close 
+  span:before, span:after
+    content: ""
+    width: 100%
+    height: 3px
+    background: #85bb3a
+    display: block
+    position: absolute
+    +transition(all 0.3s ease)
+    +border-radius(5px)
+
+
+.menu, .close 
+  span:before
+    top: -7px
+
+.menu, .close 
+  span:after
+    top: 7px
+
+.menu.open, .close.open
+  span
+    background: transparent
+
+.menu.open, .close.open 
+  span:before
+    +transform(matrix(.7,.7,-.7,.7,0,6))
+
+.menu.open, .close.open
+  span:after
+    +transform(matrix(.7,-.7,.7,.7,0,-8))
+
+
+
+
+.activo
+  color: #b8163b !important
+  font-weight: bold !important
+
+
+/****** animaciones ******/
+
+.upDown
+  opacity: 1
+  top: 5px
+
+
+
+    
+  
