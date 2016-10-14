@@ -51,6 +51,11 @@ header
           letter-spacing: 1px
 
 @media(min-width: 992px)
+  
+  .det-products
+    .header__menu
+      display: none !important
+
   .col-xs-9
     .header__menu
       height: auto 
@@ -135,9 +140,24 @@ header
   z-index: 99999
   +transition(all 0.3s ease)
 
+.home
+  .close
+    display: none  
+
+.det-products
+  .menu
+    display: none !important
+
 @media(min-width: 992px)
-  .menu, .close
+  .det-products
+    .close
+      display: block !important
+
+  .menu
     display: none
+  
+
+
 
 
 

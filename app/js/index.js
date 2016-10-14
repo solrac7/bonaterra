@@ -34,6 +34,11 @@ $(function(){
 		    $header__menu = $(".header__menu"),
 		    $hamburgerMenu = $(".menu");
 
+
+		if ($("body").hasClass("det-products")) {
+			$(".close").addClass("open")
+		}
+
 		// CLICK HAMBURGER MENU
 		$hamburgerMenu.click(function(){
 		  $(this)
@@ -72,7 +77,7 @@ $(window).load(function() {
     $(".logo__container").addClass("upDown");
    }, 500);
 
-  if ($(window).width() > 991) {
+  if ($(window).width() > 991 && $("body").hasClass("home")) {
 	  var s = skrollr.init({
 	      smoothScrollingDuration: 3000
 	  });
